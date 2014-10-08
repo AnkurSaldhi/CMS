@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <title>USER REGISTRATION</title>
+  </head>
+
+<table>
+<body style="background-color: 	#48D1CC;font-family:arial;font-size:25px">
+       <h1>REGISTRATION PAGE</h1>
+<form method="post">
+
+
+<style>
+.sub{
+		
+		font-size:25px;
+		color:blue;
+		position:absolute;left:210px;
+                         
+	    }
+  </style>
+
+
+<tr>
+   <td>
+     <label>
+  Name
+      </label>
+
+    </td>
+   <td>
+    
+
+<input name="username" value={{useragain}}>
+
+
+<span style="color: red">{{usererror}}</span>
+</td></tr>
+
+
+
+
+<tr><td>
+<label>
+Password
+
+</label>
+</td>
+<td>
+<input type="password" name="password">
+
+<span style="color: red">{{passerror}}</span>
+</td></tr>
+
+<tr><td>
+<label>
+Confirm password
+
+</label></td>
+<td>
+<input type="password" name="verify">
+
+<span style="color: red">{{verifyerror}}</span>
+</td></tr>
+
+
+<tr><td>
+<label>
+
+Email (optional)
+</label>
+</td>
+<td>
+
+<input name="email" value={{againemail}}>
+
+<span style="color: red">{{emailerror}}</span>
+
+</td>
+</tr>
+
+
+
+
+
+<tr><td>
+<label>
+Mobile
+</label>
+</td>
+<td>
+
+<input name="mobile">
+
+<span style="color: red">{{mobileerror}}</span>
+
+</td>
+</tr>
+
+
+
+
+<tr><td>
+<label>
+
+ Address
+</label>
+</td>
+<td>
+<textarea name="address" style=height:100px;width:400px;"></textarea>
+
+<span style="color: red">{{addresserror}}</span>
+
+</td>
+</tr>
+
+
+
+
+<tr><td><br><input class="sub" type="Submit"></td></tr>
+
+</form>
+</body>
+</table>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <title>CMS</title>
+   </head>
+
+
+  <body  style="background-color:#FFEBCD;font-family:arial;font-size:20px">
+
+
+   <form method="post">
+
+
+<style>
+  .loginlink{
+		position: absolute;
+		top: 5px;
+              	font-size:25px;
+		right: 350px;
+		color: green
+	    }
+  </style>
+
+
+
+ <style>
+  .editpage{
+		position: absolute;
+		top: 5px;
+		font-size:25px;
+		right: 570px;
+		color: blue
+	    }
+  </style>
+
+
+
+<style>
+  .logoutlink{
+		position: absolute;
+		top: 5px;
+		font-size:25px;
+		right: 350px;
+		color: green
+	    }
+  </style>
+
+
+
+
+<style>
+  .signuplink{
+		position: absolute;
+		top: 5px;
+		font-size:25px;
+		right: 170px;
+		color: red;
+	    }
+  </style>
+
+
+<style>
+             .grp{
+		position: absolute;
+		top: 10px;
+		font-size:25px;
+		left: 20px;
+		color: #124233;
+	    }
+  </style>
+
+
+
+
+  <style>
+  .homelink{
+		position: absolute;
+		top: 6px;
+		right: 25px;
+		font-size:25px;
+		color: blue
+	    }
+  </style>
+  
+
+ <style>
+  .feedbacklink{
+		position: absolute;
+		top: 10px;
+		left: 200px;
+		font-size:25px;
+		color:#800000
+                         
+	    }
+  </style>
+
+
+
+  
+
+  {% if login %}
+     <a class= "loginlink" href="/login">Login</a>
+  {% endif %}
+ 
+  {% if edit %}
+     {% if link!='/' %}
+         <a class= "editpage" href="/_edit{{pagelink}}">Edit</a>
+     {% endif %}
+  {% endif %}
+
+  
+
+
+
+    {% if logout %}
+     <a class= "logoutlink" href="/logout">Logout({{usernm}})</a>
+  {% endif %}
+
+
+
+    {% if signup %}
+     <a class= "signuplink" href="/signup">Signup</a>
+  {% endif %}
+
+
+ {% if link!='/' %}
+         <a class= "homelink" href="/">Home</a>
+     {% endif %}
+  
+
+<a class= "feedbacklink" href="/feedback">Feedback</a>
+
+
+
+  </form>
+  </body>
+  </html>
+  
+
+
+  

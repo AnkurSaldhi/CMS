@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <title>CMS</title>
+   </head>
+
+
+  <body style="background-color:#779545;font-family:arial;font-size:25px">
+ 
+
+   <form  enctype="multipart/form-data" method="post">
+     <br><br>
+      <textarea name="q" style="color:blue;font-size:17px;height:400px;width:600px;">{{q}}</textarea>
+	<br>
+	<br>
+
+    <input type="file" name="photo">
+     <br><br>
+
+      <input type="submit" value="save">
+
+
+
+ <style>
+  .editpage{
+		position: absolute;
+		top: 5px;
+		right: 440px;
+		color: blue
+	    }
+  </style>
+
+
+
+<style>
+  .loginlink{
+		position: absolute;
+		top: 5px;
+		right: 350px;
+		color: blue
+	    }
+  </style>
+
+
+
+
+
+<style>
+  .logoutlink{
+		position: absolute;
+		top: 5px;
+		right: 300px;
+		color: blue
+	    }
+  </style>
+  
+
+ 
+ <style>
+  .signuplink{
+		position: absolute;
+		top: 5px;
+		right: 250px;
+		color: blue
+	    }
+  </style>
+
+
+  <style>
+  .homelink{
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		color: blue
+	    }
+  </style>
+  
+
+
+
+
+
+
+
+  {% if edit %}
+     <a class= "editpage" href="/_edit{{pagelink}}">edit</a>
+  {% endif %}
+
+   
+
+   {% if login %}
+     <a class= "loginlink" href="/login">login</a>
+  {% endif %}
+
+
+    {% if logout %}
+     <a class= "logoutlink" href="/logout">logout({{usernm}})</a>
+  {% endif %}
+
+
+   {% if signup %}
+     <a class= "signuplink" href="/signup">signup</a>
+  {% endif %}
+
+ 
+   <a class= "homelink" href="/">Home</a>
+
+  </form>
+  </body>
+  </html>
+  
+
+
+  

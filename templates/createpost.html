@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+    <title>Create Group</title>
+   </head>
+
+
+  <body style="background-color:#579545;font-family:arial;font-size:25px">
+ 
+
+
+ <form method="post">
+   <br>
+
+   <a class="createnewpost" href="/createpost{{groupname}}">Create New Post</a>
+
+  <br><br><br>
+    {% for i in checktopic %}
+         <span style="margin-left:5cm">
+          <a href="{{groupname}}/{{i.topicheading}}">{{i.topicheading}}</a>   ----- by <span style="color:yellow">{{ i.postby}}         </span>
+          <br><br><br>
+    {% endfor %}
+
+
+
+<style>
+             .createnewpost{
+		font-size:30px;
+		color: red;
+	                 }
+  </style>
+
+</form>
+</body>
+</html>

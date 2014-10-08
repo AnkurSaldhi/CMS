@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <title>USER LOGIN</title>
+   <style>
+  .login{
+		
+		font-size:25px;
+		color:blue;
+		position:absolute;left:340px;
+                         
+	    }
+  </style>
+
+  </head>
+
+<body style="background-color: 	#CD853F;font-family:arial;font-size:30px">
+    
+       <br><br>
+       <h1><label style="margin-left:5cm">LOGIN PAGE</label></h1>
+<form method="post">
+
+
+<table>
+<tr>
+<td>
+
+  <label style="margin-left:5cm">Name</label>
+</td>
+<td>
+  
+
+<input type="text" name="username">
+
+
+</td>
+</tr>
+
+
+
+<tr><td>
+   <label style="margin-left:5cm">Password</label>
+</td>
+<td>
+<input type="password" name="password">
+
+
+<div style="color: red">{{invaliderror}}</div>
+
+</td></tr>
+</table>
+
+<br>
+<input class="login" type="submit" value="Login">
+
+
+<br><br>
+<label style="font-size:35px;color:levendre;position:absolute;top:150px;right:170px;">
+NEW USER ???
+</label><br>
+<a href="/signup" style="color:red;font-size:25px;position:absolute;top:190px;right:260px">SIGNUP</a>
+
+
+</form>
+</body>
+</html>

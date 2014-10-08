@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+    <title>Discussion</title>
+   </head>
+
+
+  <body style="background-color:red;font-size:10px">
+ 
+
+
+ <form method="post">
+   <br><br><br><br><br>
+   <h2>**********COMMENTS**********</h2>
+   {% if pagecomments %}
+      {% for i in pagecomments %}
+      <span style="color:#996600";font-family:"Arial Bold Italic">{{i.comment}} </span>     ------ <label>by</label> <span style="color:#6600CC"> {{i.postedby}}</span>
+      <br><br>
+      {% endfor %}
+   {% endif %}
+          
+   <textarea name="comment"  style="color:red;height:100px;width:600px;">Your comment.....</textarea>
+   <br><br>
+   <input class="post" name="post" type="submit" value="post">
+<br><br><br>
+
+{% if delete and link!='/' %}
+     <input class="del" name="delete" value="DELETE THIS POST" type="submit">
+  {% endif %}
+
+<style>
+             .comments{
+		font-size:30px;
+		color: #324534;
+	                 }
+  </style>
+
+
+<style>
+             .post{
+		font-size:30px;
+		color: blue;
+	                 }
+  </style>
+
+
+  <style>
+  .del{
+		
+		font-size:25px;
+		color:red
+                         
+	    }
+  </style>
+</form>
+</body>
+</html>
